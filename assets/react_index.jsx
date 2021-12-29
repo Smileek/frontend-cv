@@ -159,7 +159,7 @@ class Presentation extends React.Component {
             tabindex="0"
             onWheel={ (e) => this.handleWheel(e) }
             onKeyDown={ (e) => this.handleKeyDown(e) }
-            onClick={ (e) => this.handle(e) }
+            onClick={ (e) => this.handleClick(e) }
             onTouchStart={ (e) => this.handleTouchStart(e) }
             onTouchEnd={ (e) => this.handleTouchEnd(e) }
             className={ this.renderSlideClasses(this.activeSlide.classes) }>

@@ -79,10 +79,12 @@ $(document).ready(function() {
     }, { passive: false });
 
     document.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+        if ($('#final').is(':hidden')) {
+            e.preventDefault();
+            e.stopPropagation();
 
-        changeSlide(true, 1);
+            changeSlide(true, 1);
+        }
     }, { passive: false });
 
     document.addEventListener('keydown', function(e) {

@@ -34,6 +34,7 @@ img {
     margin: 0;
     padding: 0;
     white-space: nowrap;
+    user-select: none;
 }
 .inner {
     display: flex;
