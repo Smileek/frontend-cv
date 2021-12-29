@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Frontend Developer To Hire</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+        <link rel="manifest" href="./assets/site.webmanifest">
+        <meta name="keywords" content="about, frontend, developer, hire, javascript, js, vue.js, react, awesome">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/main.css">
+        <script type="text/javascript" src="./assets/vue.global.prod.js"></script>
+        <script type="text/javascript" src="./assets/vue_index.js"></script>
+        <script type="text/javascript" src="./assets/nyan.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <transition mode="out-in" name="fade" @after-leave="afterLeave">
+                <div :key="index" class="slide" :class="slides[index].classes" id="main" style="display: block">
+                    <div class="container" v-html="slides[index].content"></div>
+                </div>
+            </transition>
+        </div>
+    </body>
+</html>
